@@ -5,7 +5,7 @@ Ruby 2.3
 enter "bundle install" in terminal to install dependencies
 
 ## Tests
-run "rspec" in terminal, this will run all tests. The http response has been cached to VCR, so no Internet needed, except for testing the rest-client.
+run "rspec" in terminal, this will run all tests. The http response has been cached to VCR, so no Internet are needed, except for testing the rest-client.
 
 ## How to run the app
 ruby application.rb
