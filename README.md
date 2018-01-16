@@ -1,13 +1,13 @@
-* Environment
+## Environment
 Ruby 2.3
 
-* Prerequisites
+## Prerequisites
 enter "bundle install" in terminal to install dependencies
 
-* Tests
+## Tests
 run "rspec" in terminal, this will run integration test. The http response has been cached to VCR, so no Internet needed.
 
-* How to run the app
+## How to run the app
 run "ruby application.rb" in terminal
 
 you will be prompted with below
