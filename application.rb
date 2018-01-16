@@ -1,5 +1,5 @@
 require_relative 'lib/clients/simple_rest_client'
-require_relative 'lib/commands/commands_pack'
+require_relative 'lib/commands/command_pack'
 
 class Main
   BASE_URL = "http://wp8m3he1wt.s3-website-ap-southeast-2.amazonaws.com"
@@ -17,11 +17,11 @@ class Main
   end
 
   def setup_client_commands
-    client.add_command(Kogan::Commands::ListCategory.new)
-    client.add_command(Kogan::Commands::Average.new)
-    client.add_command(Kogan::Commands::Help.new)
-    client.add_command(Kogan::Commands::Quit.new)
-    client.add_command(Kogan::Commands::Exit.new)
+    Kogan::Commands.constants.each do |k|
+      if Kogan::Commands.const_get(k).instance_of? Class
+        client.add_command(Object.const_get("Kogan::Commands::#{k.to_s}").new) unless k.to_s == 'Base'
+      end
+    end
   end
 
 

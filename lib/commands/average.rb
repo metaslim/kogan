@@ -1,5 +1,4 @@
 require_relative 'base'
-require 'json'
 
 module Kogan
   module Commands
@@ -14,11 +13,15 @@ module Kogan
         command, category = input.match(/^(average)\s+?(.*)$/).captures
         products_for_category = get_all_products_for_category(client, category)
 
-        total_volume = get_volume(products_for_category)
-        total_cubic_weight = get_cubic_weight(total_volume)
-        average = get_average(total_cubic_weight, products_for_category.size).round(2)
+        begin
+          total_volume = get_volume(products_for_category)
+          total_cubic_weight = get_cubic_weight(total_volume)
+          average = get_average(total_cubic_weight, products_for_category.size)
+        rescue
+          average = 0
+        end
 
-        puts "Average cubic weight for all products in #{category} category is #{average} kg"
+        puts "Average cubic weight for all products in #{category} category is #{average.round(2)} kg"
       end
 
       def get_volume(category)

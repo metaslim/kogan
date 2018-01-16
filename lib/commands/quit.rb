@@ -1,11 +1,10 @@
 require_relative 'base'
-require 'json'
 
 module Kogan
   module Commands
     class Quit < Kogan::Commands::Base
       private
-      
+
       def is_valid?(input)
         input =~ /^quit$/
       end
