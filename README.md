@@ -8,13 +8,15 @@ enter "bundle install" in terminal to install dependencies
 run "rspec" in terminal, this will run integration test. The http response has been cached to VCR, so no Internet needed.
 
 ## How to run the app
-run "ruby application.rb" in terminal
+ruby application.rb
 
-you will be prompted with below
+```
 ENTER COMMAND [average category, help, list_category, quit]
+```
 
 list_category
 
+```
 Gadgets
 Air Conditioners
 Batteries
@@ -37,6 +39,10 @@ Travel Accessories
 Pest Control
 Android Phones
 Shoes
+```
 
 average Air Conditioners
+
+```
 Average cubic weight for all products in Air Conditioners category is 15.4 kg
+```
