@@ -3,6 +3,9 @@ require_relative 'base'
 module Kogan
   module Commands
     class Average < Kogan::Commands::Base
+      CUBIC_WEGHT_CONVERSION_FACTOR = 250
+      CM3_TO_M3 = 1000000
+
       private
 
       def is_valid?(input)
@@ -21,19 +24,19 @@ module Kogan
           average = 0
         end
 
-        puts "Average cubic weight for all products in #{category} category is #{average.round(2)} kg"
+        puts "Average cubic weight for all products in #{category} category is #{average.round(1)} kg"
       end
 
       def get_volume(category)
         category.inject(0) do |volume, product|
           width, length, height = product["size"].values
           volume += width * length * height
-          volume.to_f / 1000000
+          volume.to_f / CM3_TO_M3
         end
       end
 
       def get_cubic_weight(volume)
-        volume.to_f * 250
+        volume.to_f * CUBIC_WEGHT_CONVERSION_FACTOR
       end
 
       def get_average(cubic_weight, size)
