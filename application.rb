@@ -10,16 +10,22 @@ class Main
     end
   end
 
-  attr_reader :client
+  def execute
+    setup_client_commands
+    waiting_for_command
+  end
 
+  private
+  
+  attr_reader :client
   def initialize
     @client = Kogan::Clients::SimpleRestClient.new(BASE_URL)
   end
 
   def setup_client_commands
     Kogan::Commands.constants.each do |k|
-      if Kogan::Commands.const_get(k).instance_of? Class
-        client.add_command(Object.const_get("Kogan::Commands::#{k.to_s}").new) unless k.to_s.eql? 'Base'
+      if Kogan::Commands.const_get(k).instance_of?(Class) && k.to_s != 'Base'
+        client.add_command(Object.const_get("Kogan::Commands::#{k.to_s}").new)
       end
     end
   end
@@ -32,10 +38,7 @@ class Main
     end
   end
 
-  def execute
-    setup_client_commands
-    waiting_for_command
-  end
+
 end
 
 Main.run
