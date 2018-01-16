@@ -16,15 +16,18 @@ module Kogan
         command, category = input.match(/^(average)\s+?(.*)$/).captures
         products_for_category = get_all_products_for_category(client, category)
 
-        begin
-          total_volume = get_volume(products_for_category)
-          total_cubic_weight = get_cubic_weight(total_volume)
-          average = get_average(total_cubic_weight, products_for_category.size)
-        rescue
-          average = 0
+        if products_for_category.nil?
+          puts "#{category} is invalid category"
+        else
+          begin
+            total_volume = get_volume(products_for_category)
+            total_cubic_weight = get_cubic_weight(total_volume)
+            average = get_average(total_cubic_weight, products_for_category.size)
+          rescue
+            average = 0
+          end
+          puts "Average cubic weight for all products in #{category} category is #{average.round(1)} kg"
         end
-
-        puts "Average cubic weight for all products in #{category} category is #{average.round(1)} kg"
       end
 
       def get_volume(category)
