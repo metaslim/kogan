@@ -26,10 +26,9 @@ class Main
 
   def waiting_for_command
     puts "ENTER COMMAND [average category, help, list_category, quit]"
-    command = gets
     loop do
-      client.execute command.chomp
       command = gets
+      client.execute command.chomp
     end
   end
 
