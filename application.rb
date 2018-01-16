@@ -19,11 +19,10 @@ class Main
   def setup_client_commands
     Kogan::Commands.constants.each do |k|
       if Kogan::Commands.const_get(k).instance_of? Class
-        client.add_command(Object.const_get("Kogan::Commands::#{k.to_s}").new) unless k.to_s == 'Base'
+        client.add_command(Object.const_get("Kogan::Commands::#{k.to_s}").new) unless k.to_s.eql? 'Base'
       end
     end
   end
-
 
   def waiting_for_command
     puts "ENTER COMMAND [average category, help, list_category, quit]"
