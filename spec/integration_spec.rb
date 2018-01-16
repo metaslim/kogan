@@ -88,4 +88,13 @@ describe "result" do
       }.to output("Average cubic weight for all products in SIM Cards category is 0.0 kg\n").to_stdout
     end
   end
+
+  it "shows error message for wrong category" do
+    client.add_command(Kogan::Commands::Average.new)
+    VCR.use_cassette('kogan/average') do
+      expect {
+        client.execute 'average Food'
+      }.to output("Food is invalid category\n").to_stdout
+    end
+  end
 end
