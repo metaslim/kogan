@@ -1,0 +1,455 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://wp8m3he1wt.s3-website-ap-southeast-2.amazonaws.com/api/products/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.6.0 x86_64) ruby/2.3.3p222
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - dBrfXieFxD0p5UT0+bCQieg7T8JbfFZaAXgKHgiWMZm2ozv2KTNGd9Ty3rq/XhddJnbmyAHASMI=
+      X-Amz-Request-Id:
+      - F0B8DFEB0EA6C4BB
+      Date:
+      - Tue, 16 Jan 2018 03:32:31 GMT
+      Last-Modified:
+      - Fri, 20 Jan 2017 05:02:10 GMT
+      Etag:
+      - '"05d4b2f9cda45026459799221f964a38"'
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1538'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: "{\n    \"objects\": [\n        {\n            \"category\": \"Gadgets\",
+        \n            \"title\": \"10 Pack Family Car Sticker Decals\", \n            \"weight\":
+        120.0, \n            \"size\": {\n                \"width\": 15.0, \n                \"length\":
+        13.0, \n                \"height\": 1.0\n            }\n        }, \n        {\n
+        \           \"category\": \"Air Conditioners\", \n            \"title\": \"Window
+        Seal for Portable Air Conditioner Outlets\", \n            \"weight\": 235.0,
+        \n            \"size\": {\n                \"width\": 26.0, \n                \"length\":
+        26.0, \n                \"height\": 5.0\n            }\n        }, \n        {\n
+        \           \"category\": \"Batteries\", \n            \"title\": \"10 Pack
+        Kogan CR2032 3V Button Cell Battery\", \n            \"weight\": 60.0, \n
+        \           \"size\": {\n                \"width\": 5.8, \n                \"length\":
+        19.0, \n                \"height\": 0.3\n            }\n        }, \n        {\n
+        \           \"category\": \"Cables & Adapters\", \n            \"title\":
+        \"3 Pack Apple MFI Certified Lightning to USB Cable (3m)\", \n            \"weight\":
+        90.0, \n            \"size\": {\n                \"width\": 10.0, \n                \"length\":
+        20.0, \n                \"height\": 3.0\n            }\n        }, \n        {\n
+        \           \"category\": \"Air Conditioners\", \n            \"title\": \"Kogan
+        10,000 BTU Portable Air Conditioner (2.9KW)\", \n            \"weight\": 26200.0,
+        \n            \"size\": {\n                \"width\": 49.6, \n                \"length\":
+        38.7, \n                \"height\": 89.0\n            }\n        }\n    ],
+        \n    \"next\": \"/api/products/2\"\n}"
+    http_version: 
+  recorded_at: Tue, 16 Jan 2018 03:32:30 GMT
+- request:
+    method: get
+    uri: http://wp8m3he1wt.s3-website-ap-southeast-2.amazonaws.com/api/products/2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.6.0 x86_64) ruby/2.3.3p222
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - iw85AcNUabtUE+4Y4/ttCZrOglrzlxE3QlQJZSOlzwEE7aXJ663BsR0MutKtXiu9dpplmkimCMs=
+      X-Amz-Request-Id:
+      - 7F5E1CFB6A750C11
+      Date:
+      - Tue, 16 Jan 2018 03:32:31 GMT
+      Last-Modified:
+      - Fri, 20 Jan 2017 05:02:11 GMT
+      Etag:
+      - '"48e0cb0287b508bc3ce1fac1b3d60dd7"'
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1534'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: "{\n    \"objects\": [\n        {\n            \"category\": \"Oral
+        Care\", \n            \"title\": \"8 Pack Replacement Toothbrush Heads (Medium
+        Bristles) - Oral-B Compatible\", \n            \"weight\": 60.0, \n            \"size\":
+        {\n                \"width\": 8.7, \n                \"length\": 22.7, \n
+        \               \"height\": 1.5\n            }\n        }, \n        {\n            \"category\":
+        \"Food Preparation\", \n            \"title\": \"9-in-1 Salad Spinner and
+        Slicer\", \n            \"weight\": 100.0, \n            \"size\": {\n                \"width\":
+        16.5, \n                \"length\": 26.6, \n                \"height\": 26.7\n
+        \           }\n        }, \n        {\n            \"category\": \"Scooters,
+        Bicycles & Tricycles\", \n            \"title\": \"Fortis Urban Traveller
+        20\\\" Folding Bike\", \n            \"weight\": 18600.0, \n            \"size\":
+        {\n                \"width\": 34.0, \n                \"length\": 89.0, \n
+        \               \"height\": 69.0\n            }\n        }, \n        {\n
+        \           \"category\": \"Fitness Equipment\", \n            \"title\":
+        \"Fortis Vibration Plate\", \n            \"weight\": 15900.0, \n            \"size\":
+        {\n                \"width\": 78.0, \n                \"length\": 21.0, \n
+        \               \"height\": 43.5\n            }\n        }, \n        {\n
+        \           \"category\": \"Automotive Accessories\", \n            \"title\":
+        \"GPS Car Head Up Display\", \n            \"weight\": 300.0, \n            \"size\":
+        {\n                \"width\": 17.0, \n                \"length\": 4.5, \n
+        \               \"height\": 13.2\n            }\n        }\n    ], \n    \"next\":
+        \"/api/products/a\"\n}"
+    http_version: 
+  recorded_at: Tue, 16 Jan 2018 03:32:30 GMT
+- request:
+    method: get
+    uri: http://wp8m3he1wt.s3-website-ap-southeast-2.amazonaws.com/api/products/a
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.6.0 x86_64) ruby/2.3.3p222
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - RABGe3r4Z8UdRphOKYiRFZ3ldFeg5B/TgK56I/tg4XGV4xgJBMQIrAQoTKv8QpUFKDNvAv2gRcw=
+      X-Amz-Request-Id:
+      - EEC6336463757E6D
+      Date:
+      - Tue, 16 Jan 2018 03:32:31 GMT
+      Last-Modified:
+      - Fri, 20 Jan 2017 05:02:11 GMT
+      Etag:
+      - '"4a2750eff5f79fd9a4f3610d970788db"'
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1545'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: "{\n    \"objects\": [\n        {\n            \"category\": \"Air Conditioners\",
+        \n            \"title\": \"Kogan 12,000 BTU Portable Air Conditioner (3.5KW,
+        Reverse Cycle)\", \n            \"weight\": 33500.0, \n            \"size\":
+        {\n                \"width\": 49.5, \n                \"length\": 56.7, \n
+        \               \"height\": 87.5\n            }\n        }, \n        {\n
+        \           \"category\": \"Air Conditioners\", \n            \"title\": \"Kogan
+        14,000 BTU Portable Air Conditioner (4.1KW, Reverse Cycle)\", \n            \"weight\":
+        35450.0, \n            \"size\": {\n                \"width\": 49.5, \n                \"length\":
+        56.8, \n                \"height\": 87.5\n            }\n        }, \n        {\n
+        \           \"category\": \"LED Televisions\", \n            \"title\": \"Kogan
+        32\\\" Agora Smart LED TV\", \n            \"weight\": 8100.0, \n            \"size\":
+        {\n                \"width\": 53.7, \n                \"length\": 80.0, \n
+        \               \"height\": 15.4\n            }\n        }, \n        {\n
+        \           \"category\": \"LED Televisions\", \n            \"title\": \"Kogan
+        32\\\" LED TV\", \n            \"weight\": 6700.0, \n            \"size\":
+        {\n                \"width\": 13.7, \n                \"length\": 80.2, \n
+        \               \"height\": 50.5\n            }\n        }, \n        {\n
+        \           \"category\": \"LED Televisions\", \n            \"title\": \"Kogan
+        32\\\" LED TV & DVD Player Combo\", \n            \"weight\": 7380.0, \n            \"size\":
+        {\n                \"width\": 16.5, \n                \"length\": 80.0, \n
+        \               \"height\": 51.0\n            }\n        }\n    ], \n    \"next\":
+        \"/api/products/b\"\n}"
+    http_version: 
+  recorded_at: Tue, 16 Jan 2018 03:32:30 GMT
+- request:
+    method: get
+    uri: http://wp8m3he1wt.s3-website-ap-southeast-2.amazonaws.com/api/products/b
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.6.0 x86_64) ruby/2.3.3p222
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - 7qycRtPwNXVyhuz0I4/NQ9DKxeVQ1uCeq/+rIGdyhBVlvANryD/7dC/wDed1cLsizusnm7bioy0=
+      X-Amz-Request-Id:
+      - 49C39746FF31E09C
+      Date:
+      - Tue, 16 Jan 2018 03:32:31 GMT
+      Last-Modified:
+      - Fri, 20 Jan 2017 05:02:11 GMT
+      Etag:
+      - '"f5905fda114f3dd0337fd0afce11454d"'
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1517'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: "{\n    \"objects\": [\n        {\n            \"category\": \"Carpet
+        & Steam Cleaners\", \n            \"title\": \"Kogan 360\\\\u00b0 Magic Spin
+        Mop\", \n            \"weight\": 2300.0, \n            \"size\": {\n                \"width\":
+        31.0, \n                \"length\": 47.0, \n                \"height\": 29.0\n
+        \           }\n        }, \n        {\n            \"category\": \"LED Televisions\",
+        \n            \"title\": \"Kogan 42\\\" LED TV (Full HD)\", \n            \"weight\":
+        20500.0, \n            \"size\": {\n                \"width\": 129.0, \n                \"length\":
+        18.0, \n                \"height\": 80.0\n            }\n        }, \n        {\n
+        \           \"category\": \"LED Televisions\", \n            \"title\": \"Kogan
+        49\\\" 4K Agora Smart LED TV (Ultra HD)\", \n            \"weight\": 17690.0,
+        \n            \"size\": {\n                \"width\": 16.0, \n                \"length\":
+        121.0, \n                \"height\": 74.0\n            }\n        }, \n        {\n
+        \           \"category\": \"LED Televisions\", \n            \"title\": \"Kogan
+        55\\\" 4K LED TV (Ultra HD)\", \n            \"weight\": 24600.0, \n            \"size\":
+        {\n                \"width\": 18.8, \n                \"length\": 137.9, \n
+        \               \"height\": 86.0\n            }\n        }, \n        {\n
+        \           \"category\": \"Vacuum Cleaners\", \n            \"title\": \"Kogan
+        2000W Cyclonic Bagless HEPA Vacuum\", \n            \"weight\": 6900.0, \n
+        \           \"size\": {\n                \"width\": 31.0, \n                \"length\":
+        45.5, \n                \"height\": 36.0\n            }\n        }\n    ],
+        \n    \"next\": \"/api/products/3\"\n}"
+    http_version: 
+  recorded_at: Tue, 16 Jan 2018 03:32:30 GMT
+- request:
+    method: get
+    uri: http://wp8m3he1wt.s3-website-ap-southeast-2.amazonaws.com/api/products/3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.6.0 x86_64) ruby/2.3.3p222
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - D3baBbxYtQzmdYV/E5NlSIzo8J8Zoel+CqYpqjtG3eqpnE3rmz2a1CaMm3T7zocUXzvczMhM2GU=
+      X-Amz-Request-Id:
+      - 55213508A3193597
+      Date:
+      - Tue, 16 Jan 2018 03:32:31 GMT
+      Last-Modified:
+      - Fri, 20 Jan 2017 05:02:11 GMT
+      Etag:
+      - '"ca63a69f16746a8b12e254cd7f06b347"'
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1250'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: "{\n    \"objects\": [\n        {\n            \"category\": \"LED Televisions\",
+        \n            \"title\": \"Kogan 55\\\" Agora 4K Smart LED TV (Ultra HD)\",
+        \n            \"weight\": 23290.0, \n            \"size\": {\n                \"width\":
+        16.0, \n                \"length\": 138.0, \n                \"height\": 82.0\n
+        \           }\n        }, \n        {\n            \"category\": \"Holders
+        & Stands\", \n            \"title\": \"Kogan Adjustable Laptop and Tablet
+        Stand with Mouse Pad\", \n            \"weight\": 1730.0, \n            \"size\":
+        {\n                \"width\": 28.0, \n                \"length\": 49.0, \n
+        \               \"height\": 6.0\n            }\n        }, \n        {\n            \"category\":
+        \"SIM Cards\", \n            \"title\": \"Kogan Mobile SIM - Prepaid Starter
+        Pack\", \n            \"weight\": null, \n            \"size\": {}\n        },
+        \n        {\n            \"category\": \"Prepaid Plans\", \n            \"title\":
+        \"Kogan Mobile Voucher Code: LARGE (365 Days | 8GB Per 30 Days)\", \n            \"weight\":
+        null, \n            \"size\": {}\n        }, \n        {\n            \"category\":
+        \"Prepaid Plans\", \n            \"title\": \"Kogan Mobile Voucher Code: MEDIUM
+        (365 Days | 3GB Per 30 Days)\", \n            \"weight\": null, \n            \"size\":
+        {}\n        }\n    ], \n    \"next\": \"/api/products/4\"\n}"
+    http_version: 
+  recorded_at: Tue, 16 Jan 2018 03:32:30 GMT
+- request:
+    method: get
+    uri: http://wp8m3he1wt.s3-website-ap-southeast-2.amazonaws.com/api/products/4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.6.0 x86_64) ruby/2.3.3p222
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - XaqTGaF93dJ9QI8nx2kcIt6CXj5t3Iq5f3pFqEVrEoVuHPHlJdtQvbTKkulfPwSInzVmZl1sQZU=
+      X-Amz-Request-Id:
+      - 632E666BF5D9BE02
+      Date:
+      - Tue, 16 Jan 2018 03:32:31 GMT
+      Last-Modified:
+      - Fri, 20 Jan 2017 05:02:11 GMT
+      Etag:
+      - '"b70e6e7330d5268a727b1f0cab359e6a"'
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1428'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: "{\n    \"objects\": [\n        {\n            \"category\": \"Prepaid
+        Plans\", \n            \"title\": \"Kogan Mobile Voucher Code: SMALL (365
+        Days | 1GB Per 30 Days)\", \n            \"weight\": null, \n            \"size\":
+        {}\n        }, \n        {\n            \"category\": \"Wall Mounts\", \n
+        \           \"title\": \"Kogan Tilt Extendable Wall Mount for 32\\\" - 55\\\"
+        TVs\", \n            \"weight\": 7000.0, \n            \"size\": {\n                \"width\":
+        80.0, \n                \"length\": 70.5, \n                \"height\": 22.1\n
+        \           }\n        }, \n        {\n            \"category\": \"Networking
+        & Wireless\", \n            \"title\": \"Kogan Wi-Fi Range Extender\", \n
+        \           \"weight\": 240.0, \n            \"size\": {\n                \"width\":
+        11.7, \n                \"length\": 18.0, \n                \"height\": 6.8\n
+        \           }\n        }, \n        {\n            \"category\": \"Travel
+        Adapters\", \n            \"title\": \"Korjo Reverse Adapter (Worldwide to
+        Australia/NZ)\", \n            \"weight\": 100.0, \n            \"size\":
+        {\n                \"width\": 7.5, \n                \"length\": 12.0, \n
+        \               \"height\": 5.0\n            }\n        }, \n        {\n            \"category\":
+        \"Cables & Adapters\", \n            \"title\": \"Micro USB to USB Cable (1m)\",
+        \n            \"weight\": 50.0, \n            \"size\": {\n                \"width\":
+        3.0, \n                \"length\": 15.0, \n                \"height\": 2.0\n
+        \           }\n        }\n    ], \n    \"next\": \"/api/products/c\"\n}"
+    http_version: 
+  recorded_at: Tue, 16 Jan 2018 03:32:30 GMT
+- request:
+    method: get
+    uri: http://wp8m3he1wt.s3-website-ap-southeast-2.amazonaws.com/api/products/c
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.6.0 x86_64) ruby/2.3.3p222
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - H6qiRdwGrqKtkxe5l9kMJsfezRll/VatJupsW2NBQRqGryiK7HfdGjyWkuJ5Qgwr1FFoaVd2ez4=
+      X-Amz-Request-Id:
+      - 7B1044A16B33415C
+      Date:
+      - Tue, 16 Jan 2018 03:32:31 GMT
+      Last-Modified:
+      - Fri, 20 Jan 2017 05:02:11 GMT
+      Etag:
+      - '"c06957bc34ba95f7047c7b65dc575838"'
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1513'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: "{\n    \"objects\": [\n        {\n            \"category\": \"Travel
+        Accessories\", \n            \"title\": \"Orbis 3D Soft Padded Sleeping Eye
+        Mask\", \n            \"weight\": 20.0, \n            \"size\": {\n                \"width\":
+        6.0, \n                \"length\": 12.0, \n                \"height\": 1.4\n
+        \           }\n        }, \n        {\n            \"category\": \"Automotive
+        Accessories\", \n            \"title\": \"Orbis Car Boot Organiser\", \n            \"weight\":
+        1100.0, \n            \"size\": {\n                \"width\": 9.0, \n                \"length\":
+        38.0, \n                \"height\": 35.0\n            }\n        }, \n        {\n
+        \           \"category\": \"Pest Control\", \n            \"title\": \"Pestill
+        Ultrasonic Mosquito Repeller\", \n            \"weight\": 70.0, \n            \"size\":
+        {\n                \"width\": 4.5, \n                \"length\": 3.0, \n                \"height\":
+        1.6\n            }\n        }, \n        {\n            \"category\": \"Android
+        Phones\", \n            \"title\": \"Samsung Galaxy S7 Edge (32GB, Black)\",
+        \n            \"weight\": 430.9128, \n            \"size\": {\n                \"width\":
+        8.636, \n                \"length\": 16.256, \n                \"height\":
+        5.08\n            }\n        }, \n        {\n            \"category\": \"Cables
+        & Adapters\", \n            \"title\": \"Samsung MicroUSB Charging Data Cable
+        ECB-DU4AWE 1m\", \n            \"weight\": 20.0, \n            \"size\": {\n
+        \               \"width\": 3.0, \n                \"length\": 6.0, \n                \"height\":
+        2.0\n            }\n        }\n    ], \n    \"next\": \"/api/products/5\"\n}"
+    http_version: 
+  recorded_at: Tue, 16 Jan 2018 03:32:30 GMT
+- request:
+    method: get
+    uri: http://wp8m3he1wt.s3-website-ap-southeast-2.amazonaws.com/api/products/5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.6.0 x86_64) ruby/2.3.3p222
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - fi2V7F1pqRI7QAANVuS2fA8CU8wXhYXKzPDlyIvvW01J5cBRhHEqenIee0nkzfsnAgqjJrx96dc=
+      X-Amz-Request-Id:
+      - FA432E8010987CD6
+      Date:
+      - Tue, 16 Jan 2018 03:32:31 GMT
+      Last-Modified:
+      - Fri, 20 Jan 2017 05:02:11 GMT
+      Etag:
+      - '"70fdebbdf606a2540e6557d6e403d1a5"'
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '311'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: "{\n    \"objects\": [\n        {\n            \"category\": \"Shoes\",
+        \n            \"title\": \"Sports Gel Insoles (Men's)\", \n            \"weight\":
+        216.0, \n            \"size\": {\n                \"width\": 9.8, \n                \"length\":
+        32.0, \n                \"height\": 1.0\n            }\n        }\n    ],
+        \n    \"next\": null\n}"
+    http_version: 
+  recorded_at: Tue, 16 Jan 2018 03:32:30 GMT
+recorded_with: VCR 4.0.0
