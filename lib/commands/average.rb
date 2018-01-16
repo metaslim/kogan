@@ -33,9 +33,9 @@ module Kogan
       def get_volume(category)
         category.inject(0) do |volume, product|
           width, length, height = product["size"].values
-          volume += width * length * height
-          volume.to_f / CM3_TO_M3
-        end
+
+          volume += (width * length * height)
+        end / CM3_TO_M3
       end
 
       def get_cubic_weight(volume)

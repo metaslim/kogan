@@ -76,7 +76,7 @@ describe "result" do
     VCR.use_cassette('kogan/average') do
       expect {
         client.execute 'average Air Conditioners'
-      }.to output("Average cubic weight for all products in Air Conditioners category is 15.4 kg\n").to_stdout
+      }.to output("Average cubic weight for all products in Air Conditioners category is 41.6 kg\n").to_stdout
     end
   end
 
