@@ -44,5 +44,5 @@ Shoes
 average Air Conditioners
 
 ```
-Average cubic weight for all products in Air Conditioners category is 15.4 kg
+Average cubic weight for all products in Air Conditioners category is 41.6 kg
 ```
