@@ -17,6 +17,7 @@ module Kogan
 
       def add_command(command)
         commands << command
+        self
       end
 
       def execute(input)

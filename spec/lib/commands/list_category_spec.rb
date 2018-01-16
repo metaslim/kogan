@@ -1,11 +1,10 @@
 describe "result" do
   let(:client) {
     base_url = "http://wp8m3he1wt.s3-website-ap-southeast-2.amazonaws.com"
-    Kogan::Clients::SimpleRestClient.new(base_url)
+    Kogan::Clients::SimpleRestClient.new(base_url).add_command(Kogan::Commands::ListCategory.new)
   }
 
   it "shows category list" do
-    client.add_command(Kogan::Commands::ListCategory.new)
     output = <<~OUPUT
       Gadgets
       Air Conditioners

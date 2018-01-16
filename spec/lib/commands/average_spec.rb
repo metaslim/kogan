@@ -1,11 +1,10 @@
 describe "result" do
   let(:client) {
     base_url = "http://wp8m3he1wt.s3-website-ap-southeast-2.amazonaws.com"
-    Kogan::Clients::SimpleRestClient.new(base_url)
+    Kogan::Clients::SimpleRestClient.new(base_url).add_command(Kogan::Commands::Average.new)
   }
 
   it "shows correct average for Air Conditioners" do
-    client.add_command(Kogan::Commands::Average.new)
     VCR.use_cassette('kogan/average') do
       expect {
         client.execute 'average Air Conditioners'
@@ -14,7 +13,6 @@ describe "result" do
   end
 
   it "shows 0 as average for SIM Cards" do
-    client.add_command(Kogan::Commands::Average.new)
     VCR.use_cassette('kogan/average') do
       expect {
         client.execute 'average SIM Cards'
@@ -23,7 +21,6 @@ describe "result" do
   end
 
   it "shows error message for wrong category" do
-    client.add_command(Kogan::Commands::Average.new)
     VCR.use_cassette('kogan/average') do
       expect {
         client.execute 'average Food'
