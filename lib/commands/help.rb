@@ -3,15 +3,15 @@ require 'json'
 
 module Kogan
   module Commands
-    class Quit < Kogan::Commands::Base
+    class Help < Kogan::Commands::Base
       private
       
       def is_valid?(input)
-        input =~ /^quit$/
+        input =~ /^help$/
       end
 
       def execute(client, input)
-        exit(0)
+        puts "ENTER COMMAND [average category, help, list_category, quit]"
       end
     end
   end

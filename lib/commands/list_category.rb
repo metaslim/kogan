@@ -4,6 +4,8 @@ require 'json'
 module Kogan
   module Commands
     class ListCategory < Kogan::Commands::Base
+      private
+      
       def is_valid?(input)
         input =~ /^list_category$/
       end

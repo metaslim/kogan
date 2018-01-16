@@ -32,18 +32,24 @@ module Kogan
 
       def get_all_categories(client)
         @product_per_category = {}
+        @products ||= get_all_products(client)
 
-        get_all_products(client).each do |product|
+        @products.each do |product|
           @product_per_category[product["category"]] = [] if @product_per_category[product["category"]].nil?
 
           @product_per_category[product["category"]] << {
             "title" => product["title"],
             "weight" => product["weight"],
-            "size" => product["weight"],
+            "size" => product["size"],
           }
         end
 
         @product_per_category
+      end
+
+      def get_all_products_for_category(client, category)
+        @product_per_category ||= get_all_categories(client)
+        @product_per_category[category]
       end
 
       def is_valid?(input)

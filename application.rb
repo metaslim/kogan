@@ -19,13 +19,14 @@ class Main
   def setup_client_commands
     client.add_command(Kogan::Commands::ListCategory.new)
     client.add_command(Kogan::Commands::Average.new)
+    client.add_command(Kogan::Commands::Help.new)
     client.add_command(Kogan::Commands::Quit.new)
     client.add_command(Kogan::Commands::Exit.new)
   end
 
 
   def waiting_for_command
-    puts "ENTER COMMAND [average products, quit]"
+    puts "ENTER COMMAND [average category, help, list_category, quit]"
     command = gets
     loop do
       client.execute command.chomp
