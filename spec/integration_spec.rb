@@ -39,8 +39,7 @@ describe "result" do
 
   it "shows category list" do
     client.add_command(Kogan::Commands::ListCategory.new)
-    output =
-    <<~OUPUT
+    output = <<~OUPUT
       Gadgets
       Air Conditioners
       Batteries
