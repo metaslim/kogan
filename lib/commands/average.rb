@@ -26,7 +26,7 @@ module Kogan
           rescue
             average = 0
           end
-          puts "Average cubic weight for all products in #{category} category is #{average.round(1)} kg"
+          puts "Average cubic weight for all products in #{category} category is #{average.round(2)} kg"
         end
       end
 
